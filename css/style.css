@@ -172,7 +172,12 @@ img {
 .hero-section {
 	padding-top: 200px;
 	padding-bottom: 200px;
+	height: 600px;
+	max-width: 1600px;
 	background-color: var(--overlay-color);
+	background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/hero.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-title {
