@@ -145,13 +145,14 @@ img {
 }
 
 .contacts-link {
+	display: flex;
+	align-items: center;
 	color: var(--primary-text-color);
+	fill: var(--primary-text-color);
 }
 
-.contacts-link::before {
-}
-
-.contacts-link + .contacts-link::before {
+.icon-contacts {
+	margin-right: 10px;
 }
 
 .site-nav-link:hover,
@@ -159,6 +160,7 @@ img {
 .site-nav-link:focus,
 .contacts-link:focus {
 	color: var(--accent-color);
+	fill: var(--accent-color);
 }
 
 /*Hero*/
