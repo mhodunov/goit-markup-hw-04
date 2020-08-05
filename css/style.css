@@ -397,8 +397,10 @@ img {
 }
 
 .clients-list-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: calc((100% - 150px) / 6);
-	height: 90px;
 	border: 1px solid var(--clients-logo-border);
 	border-radius: 4px;
 	fill: var(--clients-logo-border);
@@ -414,8 +416,34 @@ img {
 }
 
 .clients-link {
-	display: inline-flex;
-	align-items: center;
+	display: block;
+	width: 170px;
+	height: 90px;
+	margin: 0;
+}
+
+.clients-logo-a {
+	padding: 20px 63px 21px 63px;
+}
+
+.clients-logo-b {
+	padding: 19px 65px;
+}
+
+.clients-logo-c {
+	padding: 24px 64px;
+}
+
+.clients-logo-d {
+	padding: 24px 45px;
+}
+
+.clients-logo-e {
+	padding: 22px 55px;
+}
+
+.clients-logo-f {
+	padding: 22px 41px;
 }
 
 /*Portfolio*/
