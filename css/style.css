@@ -407,12 +407,10 @@ img {
 	height: 90px;
 	border: 1px solid var(--clients-logo-border);
 	border-radius: 4px;
-	fill: var(--clients-logo-border);
 }
 
 .clients-list-item:hover {
 	border-color: var(--accent-color);
-	fill: var(--accent-color);
 }
 
 .clients-list-item:not(:last-child) {
@@ -427,6 +425,11 @@ img {
 	width: 170px;
 	margin: 0;
 	padding: 0;
+	fill: var(--clients-logo-border);
+}
+
+.clients-link:hover {
+	fill: var(--accent-color);
 }
 
 /*Portfolio*/
