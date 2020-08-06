@@ -5,7 +5,7 @@
 	--additional-color: #ffffff;
 	--logo-color: #000000;
 	--footer-contacts-color: rgba(255, 255, 255, 0.6);
-	--overlay-color: rgba(47, 48, 58, 0.8);
+	--overlay-color: rgba(47, 48, 58, 0.4);
 	--portfolio-overlay: rgba(33, 150, 243, 0.9);
 	--secondary-background: #f5f4fa;
 	--footer-background: #2f303a;
@@ -30,6 +30,10 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+}
+
+header {
+	border-bottom: 1px solid #ececec;
 }
 
 footer {
@@ -306,19 +310,19 @@ img {
 }
 
 .icon-antenna::before {
-	background-image: url(../images/antenna.svg);
+	background-image: url(../images/icons/antenna.svg);
 }
 
 .icon-clock::before {
-	background-image: url(../images/clock.svg);
+	background-image: url(../images/icons/clock.svg);
 }
 
 .icon-diagram::before {
-	background-image: url(../images/diagram.svg);
+	background-image: url(../images/icons/diagram.svg);
 }
 
 .icon-astronaut::before {
-	background-image: url(../images/astronaut.svg);
+	background-image: url(../images/icons/astronaut.svg);
 }
 
 /*Products*/
@@ -398,9 +402,9 @@ img {
 
 .clients-list-item {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	width: calc((100% - 150px) / 6);
+	height: 90px;
 	border: 1px solid var(--clients-logo-border);
 	border-radius: 4px;
 	fill: var(--clients-logo-border);
@@ -416,34 +420,13 @@ img {
 }
 
 .clients-link {
-	display: block;
-	width: 170px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 90px;
+	width: 170px;
 	margin: 0;
-}
-
-.clients-logo-a {
-	padding: 20px 63px 21px 63px;
-}
-
-.clients-logo-b {
-	padding: 19px 65px;
-}
-
-.clients-logo-c {
-	padding: 24px 64px;
-}
-
-.clients-logo-d {
-	padding: 24px 45px;
-}
-
-.clients-logo-e {
-	padding: 22px 55px;
-}
-
-.clients-logo-f {
-	padding: 22px 41px;
+	padding: 0;
 }
 
 /*Portfolio*/
