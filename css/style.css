@@ -5,7 +5,8 @@
 	--additional-color: #ffffff;
 	--logo-color: #000000;
 	--footer-contacts-color: rgba(255, 255, 255, 0.6);
-	--overlay-color: rgba(47, 48, 58, 0.4);
+	--overlay-color: rgba(47, 48, 58, 0.8);
+	--overlay-hero: rgba(47, 48, 58, 0.4);
 	--portfolio-overlay: rgba(33, 150, 243, 0.9);
 	--secondary-background: #f5f4fa;
 	--footer-background: #2f303a;
@@ -49,6 +50,7 @@ button {
 img {
 	display: block;
 	margin: 0;
+	max-width: 100%;
 }
 
 /*Utilities*/
@@ -180,7 +182,7 @@ img {
 	height: 600px;
 	max-width: 1600px;
 	background-color: var(--overlay-color);
-	background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/hero.jpg);
+	background-image: linear-gradient(var(--overlay-hero), var(--overlay-hero)), url(../images/hero.jpg);
 	background-position: center;
 	background-size: cover;
 }
